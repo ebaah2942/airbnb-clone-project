@@ -33,3 +33,22 @@ Database Administrator: Manages and maintains databases to ensure they’re secu
 DevOps Engineer: Bridges the gap between development and operations by automating infrastructure and deployments. e.g Sets up CI/CD pipelines for automatic testing and deployment.
 
 QA Engineer: Ensures the product is free of bugs and meets the requirements before it goes live. e.g Writes and executes test cases (manual and automated).
+
+# Technology Stack
+
+Django: A high-level Python web framework that helps you build secure, scalable web applications quickly.
+
+Django REST Framework: A powerful toolkit to build Web APIs on top of Django.
+
+PostgreSQL: A powerful, open-source relational database system used to store structured data.
+
+GraphQL: A query language for APIs that lets clients fetch exactly the data they need.
+
+Celery: An asynchronous task queue used to handle background tasks.
+
+Redis: A fast in-memory data store used for caching and as a Celery message broker.
+
+Docker:  A tool for packaging your app and its dependencies into a container to run anywhere.
+
+CI/CD Pipelines: Automation tools for Continuous Integration and Continuous Deployment (CI/CD) to test and deploy your app.
+
