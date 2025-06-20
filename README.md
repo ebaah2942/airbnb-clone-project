@@ -207,6 +207,24 @@ Why it's important: Minimizes the risk if a token is compromised.
 
 Why it's important: Prevents data breaches, accidental deletions, and internal misuse.
 
+# CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of testing, building, and deploying applications. With CI/CD pipelines, every change made to the codebase can be automatically tested and deployed to production with minimal manual intervention.
+
+Why It Matters
+Speed: Enables faster release cycles by automating builds and deployments.
+
+Reliability: Automated tests catch bugs before code reaches production.
+
+Consistency: Ensures that every deployment follows the same steps and environment setup.
+
+Tools Used
+GitHub Actions: Automates testing and deployment workflows triggered by events like push or pull requests.
+
+Docker: Standardizes the environment, making it easy to build, test, and deploy across different platforms.
+
+PostgreSQL + Redis: Automatically provisioned as part of the deployment stack for production readiness.
+
 
 
 
