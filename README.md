@@ -154,6 +154,29 @@ Relationships:
 
 A payment is linked to one booking.
 
+# Feature Breakdown
+
+1. API Documentation
+All API endpoints are clearly documented using tools like Swagger or Postman collections. This helps frontend developers and third-party clients understand how to interact with the system efficiently.
+
+2. User Authentication
+Secure registration, login, and logout using JWT authentication. Users can have different roles (host or guest), and access control is enforced throughout the platform.
+
+3. Property Management
+Hosts can create, update, and delete property listings. Each property contains relevant details such as title, price, description, location, images, and availability status.
+
+4. Booking System
+Guests can check availability and make bookings for listed properties. The system handles check-in/check-out dates, prevents double bookings, and calculates total price based on stay duration.
+
+5. Payment Processing
+Supports secure payment integration (e.g., Flutterwave or Stripe). Guests must complete payment before a booking is confirmed, and transactions are tracked through a dedicated Payments model.
+
+6. Review System
+Guests who have completed a stay can leave ratings and written reviews. Reviews help future guests make informed decisions and give feedback to property hosts.
+
+7. Database Optimizations
+Efficient indexing, query optimization, and use of select_related/prefetch_related in Django ensure the app remains fast and scalable as data grows.
+
 
 
 
