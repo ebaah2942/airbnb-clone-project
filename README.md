@@ -177,6 +177,37 @@ Guests who have completed a stay can leave ratings and written reviews. Reviews 
 7. Database Optimizations
 Efficient indexing, query optimization, and use of select_related/prefetch_related in Django ensure the app remains fast and scalable as data grows.
 
+# API Security
+
+1. Authentication
+
+Why it's important: Ensures that only registered users can log in and access personal features like bookings, payments, and profile management.
+
+2. Authorization
+
+Why it's important: Prevents unauthorized actions, such as a guest attempting to edit another user’s listing or access private data.
+
+3. Rate Limiting
+
+Why it's important: Prevents brute-force attacks on login, abuse of the API, and denial of service (DoS) attempts.
+
+4. HTTPS (SSL/TLS)
+
+Why it's important: Prevents man-in-the-middle attacks and ensures secure data transmission between the client and server.
+
+5. Secure Payments
+
+Why it's important: Protects sensitive financial data and ensures transaction integrity and user trust.
+
+6. Session & Token Expiry
+
+Why it's important: Minimizes the risk if a token is compromised.
+
+7. Database Access Control
+
+Why it's important: Prevents data breaches, accidental deletions, and internal misuse.
+
+
 
 
 
