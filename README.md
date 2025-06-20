@@ -52,3 +52,112 @@ Docker:  A tool for packaging your app and its dependencies into a container to 
 
 CI/CD Pipelines: Automation tools for Continuous Integration and Continuous Deployment (CI/CD) to test and deploy your app.
 
+# Database Design
+
+1. Users
+
+Key Fields:
+
+id (Primary Key)
+
+username (Unique)
+
+email
+
+password
+
+Relationships:
+
+A user can own multiple properties.
+
+A user can make multiple bookings.
+
+A user can write multiple reviews.
+
+2. Properties
+
+Key Fields:
+
+id (Primary Key)
+
+title 
+
+description
+
+price_per_night
+
+rating
+
+Relationships:
+
+A property belongs to one host (User).
+
+A property can have multiple bookings.
+
+A property can have multiple reviews.
+
+3. Bookings
+
+Key Fields:
+
+id (Primary Key)
+
+guest (Foreign Key to Users)
+
+property (Foreign Key to Properties)
+
+check_in_date
+
+check_out_date
+
+Relationships:
+
+A booking is made by one user (guest).
+
+A booking belongs to one property.
+
+4. Reviews
+
+Key Fields:
+
+id (Primary Key)
+
+user (Foreign Key to Users)
+
+property (Foreign Key to Properties)
+
+rating (1 to 5)
+
+comment
+
+Relationships:
+
+A review belongs to one user.
+
+A review is linked to one property.
+
+5. Payments
+
+Key Fields:
+
+id (Primary Key)
+
+booking (One-to-One Field to Bookings)
+
+payment_date
+
+amount
+
+status (e.g., pending, completed, failed)
+
+Relationships:
+
+A payment is linked to one booking.
+
+
+
+
+
+
+
+
